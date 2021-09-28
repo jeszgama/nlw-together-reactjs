@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <!--Comentario-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,17 +17,21 @@
   </head>
   <body>
     <header id="header">
-      <nav class="container">
+      <nav class="container show">
         <a class="logo" href="#">beauty<span>salon</span>.</a>
+        <!-- menu -->
         <div class="menu">
-          <ul>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#testimonials">Depoimentos</a></li>
-            <li><a href="#contact">Contato</a></li>
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
           </ul>
         </div>
+        <!-- /menu -->
+        <div class="open">...</div>
+        <div class="close">x</div>
       </nav>
     </header>
 
@@ -42,7 +45,7 @@
             />
           </div>
           <div class="text">
-            <h1>Saúde natural para os seus cabelos</h1>
+            <h2 class="title">Saúde natural para os seus cabelos</h2>
             <p>
               Um salão excluisivo em São Paulo, especializado em tratamentos
               naturais
@@ -54,8 +57,12 @@
 
       <div class="divider-1"></div>
 
-      <section class="section">
-        <div class="container"></div>
+      <section class="section" id="about">
+        <div class="container grid">Sobre</div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container grid">Services</div>
       </section>
     </main>
   </body>
