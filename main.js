@@ -1,4 +1,4 @@
-/* abre e fecha o menu quando clicar no icone: hamburguer e x */
+/*  abre e fecha o menu quando clicar no icone: hamburguer e x */
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
@@ -23,10 +23,38 @@ const navHeight = header.offsetHeight
 
 window.addEventListener('scroll', function () {
   if (window.scrollY >= navHeight) {
-    //scroll é maior que a altura do header
+    // scroll é maior que a altura do header
     header.classList.add('scroll')
   } else {
-    //menor que a altura do header
+    // menor que a altura do header
     header.classList.remove('scroll')
   }
 })
+
+/* Testimonials carousel slider swiper */
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  mousewheel: true,
+  keyboard: true
+})
+
+/* ScrollReveal: Mostrar elementos quando der scroll na página */
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
+
+scrollReveal.reveal(
+  `#home .image, #home .text,
+  #about .image, #about .text,
+  #services header, #services .card,
+  #testimonials header, #testimonials .testimonials
+  #contact .text, #contact .links
+  `,
+  { interval: 100 }
+)

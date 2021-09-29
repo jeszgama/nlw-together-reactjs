@@ -7,7 +7,7 @@
     "editor.wordWrap": "on",
     "workbench.editor.tabSizing": "shrink",
     "explorer.compactFolders": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
 
     // formatter
     "prettier.tabWidth": 2,
