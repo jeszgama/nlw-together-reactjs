@@ -182,7 +182,8 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li {
   color: var(--base-color);
 }
 
@@ -197,8 +198,10 @@ nav ul li a::after {
   transition: width 0.2s;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after,
+nav ul li a.active::after {
   width: 100%;
+  font-weight: bold;
 }
 
 nav .menu {
@@ -439,6 +442,10 @@ nav.show div.icon-close {
   background: --base-color;
 }
 
+/* .swiper-pagination {
+  
+} */
+
 /*====== contact ======*/
 #contact .grid {
   gap: 4rem;
@@ -574,6 +581,7 @@ footer .social a:hover {
 
   nav .menu ul li a.title {
     font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
   }
 
   nav .icon-menu {
